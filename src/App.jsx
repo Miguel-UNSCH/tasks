@@ -17,6 +17,7 @@ export function App() {
       <TaskProvider>
         <BrowserRouter>
           <Navbar />
+          <div className="max-w-screen-xl mx-auto relative">
           <Routes>
             <Route path="/" element={<HomePage />}></Route>
             <Route path="/login" element={<LoginPage />}></Route>
@@ -29,6 +30,7 @@ export function App() {
               <Route path="/profile" element={<ProfilePage />}></Route>
             </Route>
           </Routes>
+          </div>
         </BrowserRouter>
       </TaskProvider>
     </AuthProvider>

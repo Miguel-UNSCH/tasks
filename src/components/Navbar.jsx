@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import logo from "../assets/logo.svg";
 
 export function Navbar() {
   const { signin, logout, isAuthenticated } = useAuth();
@@ -8,9 +9,9 @@ export function Navbar() {
     <>
       <nav className="bg-gray-900 w-full sticky top-0 left-0 border-b border-gray-500 dark:border-gray-600">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <Link to={"/tasks"} className="flex items-center">
+          <Link to={"/"} className="flex items-center">
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
+              src={logo}
               alt="hola"
               className="mr-3 h-8"
             />
